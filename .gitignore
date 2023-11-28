@@ -1,0 +1,19 @@
+# .gitignore
+
+# Virtual environment
+venv/
+
+# PyCharm
+.idea/
+.idea_modules/
+*.iml
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and databases
+*.log
+*.sqlite
