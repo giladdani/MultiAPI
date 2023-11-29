@@ -1,9 +1,11 @@
 from __main__ import app
 from utils import re, requests, BeautifulSoup
 from consts import IMDB_TOP_MOVIES
+from middleware import auth_api_key
 
 
 @app.route('/api/v1/movies', methods=['GET'])
+@auth_api_key
 def get_imdb_top_movies():
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
